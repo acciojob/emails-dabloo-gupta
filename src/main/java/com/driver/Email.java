@@ -33,7 +33,7 @@ public class Email {
         if(oldPassword.equals(this.password)){
             if(newPassword.length()<8) return;  // checks if it contains atleast 8 character
             for(char c: newPassword.toCharArray()){
-                if(c>='A' && c<='z') containsUpperCase=true;
+                if(c>='A' && c<='Z') containsUpperCase=true;
 
                 if(c>='a' && c<='z') containsLowerCase= true;
 
